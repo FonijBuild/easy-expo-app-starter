@@ -1,0 +1,6 @@
+.expo
+node_modules
+pnpm-lock.yaml
+web-build
+dist
+src/global.css

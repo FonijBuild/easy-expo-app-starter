@@ -1,0 +1,174 @@
+{
+  "brand": {
+    "tagline": "A production-minded Expo starter for building branded apps faster."
+  },
+  "common": {
+    "continue": "Continue",
+    "back": "Back",
+    "save": "Save changes",
+    "cancel": "Cancel",
+    "done": "Done",
+    "loading": "Loading…",
+    "retry": "Try again",
+    "notAvailable": "Not available",
+    "edit": "Edit",
+    "seeAll": "See all",
+    "version": "Version {{version}}"
+  },
+  "tabs": {
+    "home": "Home",
+    "activity": "Activity",
+    "settings": "Settings"
+  },
+  "intro": {
+    "skip": "Skip",
+    "next": "Next",
+    "start": "Get started",
+    "slides": {
+      "fast": {
+        "title": "Build faster",
+        "description": "Start with navigation, authentication, settings, localization, and a flexible design system already in place."
+      },
+      "scale": {
+        "title": "Scale with confidence",
+        "description": "Feature boundaries, typed repositories, and a predictable architecture keep the codebase maintainable."
+      },
+      "brand": {
+        "title": "Make it yours",
+        "description": "Change brand tokens, copy, languages, and feature flags without rewriting product screens."
+      }
+    }
+  },
+  "auth": {
+    "welcomeTitle": "Welcome to {{appName}}",
+    "welcomeDescription": "Choose how you want to continue.",
+    "emailLogin": "Continue with email",
+    "phoneLogin": "Continue with phone",
+    "createAccount": "Create an account",
+    "email": "Email address",
+    "password": "Password",
+    "phone": "Phone number",
+    "displayName": "Display name",
+    "forgotPassword": "Forgot password?",
+    "login": "Sign in",
+    "sendCode": "Send verification code",
+    "verifyTitle": "Verify your phone",
+    "verifyDescription": "Enter the {{length}}-digit code sent to {{phone}}.",
+    "verify": "Verify code",
+    "resend": "Resend code",
+    "resendIn": "Resend in {{seconds}}s",
+    "mockHint": "Development code: {{code}}",
+    "forgotTitle": "Reset your password",
+    "forgotDescription": "Enter your email and we will send reset instructions if an account exists.",
+    "sendReset": "Send reset instructions",
+    "checkEmailTitle": "Check your email",
+    "checkEmailDescription": "If an account matches that address, reset instructions are on the way.",
+    "resetTitle": "Choose a new password",
+    "newPassword": "New password",
+    "confirmPassword": "Confirm password",
+    "resetPassword": "Reset password",
+    "resetSuccessTitle": "Password updated",
+    "resetSuccessDescription": "Your password was changed successfully. You can now sign in.",
+    "backToLogin": "Back to sign in",
+    "termsPrefix": "By continuing, you agree to the",
+    "terms": "Terms of Service",
+    "privacy": "Privacy Policy",
+    "or": "or",
+    "logout": "Sign out",
+    "errors": {
+      "invalidCredentials": "The email or password is incorrect.",
+      "invalidOtp": "The verification code is invalid or expired.",
+      "generic": "Something went wrong. Please try again."
+    },
+    "mockReset": "Open the mock reset link"
+  },
+  "onboarding": {
+    "title": "Complete your profile",
+    "description": "A few details help personalize the starter experience.",
+    "name": "Your name",
+    "bio": "Short bio",
+    "bioPlaceholder": "Tell us a little about yourself",
+    "finish": "Finish setup"
+  },
+  "dashboard": {
+    "greeting": "Hello, {{name}}",
+    "subtitle": "Here is a reusable dashboard foundation for your product.",
+    "overview": "Overview",
+    "activeUsers": "Active users",
+    "completion": "Completion",
+    "revenue": "Revenue",
+    "quickActions": "Quick actions",
+    "newItem": "Create item",
+    "invite": "Invite teammate",
+    "report": "View report",
+    "recent": "Recent activity",
+    "items": {
+      "profile": "Profile setup completed",
+      "security": "Security settings reviewed",
+      "project": "First project created"
+    },
+    "liveDemo": "Live demo",
+    "defaultUser": "there",
+    "hourAgo": "{{count}}h ago"
+  },
+  "activity": {
+    "title": "Activity",
+    "description": "A reusable timeline for notifications, audit events, or product updates.",
+    "emptyTitle": "No activity yet",
+    "emptyDescription": "New events will appear here when your app starts producing them."
+  },
+  "profile": {
+    "title": "Profile",
+    "editTitle": "Edit profile",
+    "publicTitle": "Public profile",
+    "name": "Name",
+    "bio": "Bio",
+    "email": "Email",
+    "phone": "Phone",
+    "saveSuccess": "Profile updated.",
+    "publicUnavailableTitle": "Public profile not connected",
+    "publicUnavailableDescription": "Connect this route to your user-profile API before exposing public profiles."
+  },
+  "settings": {
+    "title": "Settings",
+    "account": "Account",
+    "appearance": "Appearance",
+    "language": "Language",
+    "about": "About",
+    "profile": "Profile",
+    "security": "Security and privacy",
+    "themeTitle": "Choose appearance",
+    "themeDescription": "Use the device setting or choose a theme for this app.",
+    "system": "System",
+    "light": "Light",
+    "dark": "Dark",
+    "languageTitle": "Choose language",
+    "languageDescription": "The app copy and layout direction update immediately.",
+    "english": "English",
+    "persian": "Persian",
+    "aboutTitle": "About {{appName}}",
+    "aboutDescription": "A configurable Expo and React Native starter for Android, iOS, and web.",
+    "dangerZone": "Danger zone",
+    "deleteAccount": "Delete account",
+    "deletePlaceholder": "Connect this action to your backend and require recent authentication before deletion."
+  },
+  "legal": {
+    "termsTitle": "Terms of Service",
+    "privacyTitle": "Privacy Policy",
+    "updated": "Last updated: {{date}}",
+    "termsBody": "Replace this placeholder with legal terms reviewed for your product, company, users, and operating countries before release.",
+    "privacyBody": "Replace this placeholder with a privacy policy that accurately describes collected data, purposes, retention, processors, user rights, and contact methods."
+  },
+  "errors": {
+    "required": "This field is required.",
+    "email": "Enter a valid email address.",
+    "phone": "Enter a valid phone number.",
+    "password": "Use at least 8 characters.",
+    "passwordMatch": "Passwords do not match.",
+    "notFoundTitle": "Page not found",
+    "notFoundDescription": "The page may have moved or the link may be incorrect.",
+    "goHome": "Go to home",
+    "nameLength": "Use 60 characters or fewer.",
+    "bioLength": "Use 240 characters or fewer."
+  }
+}
