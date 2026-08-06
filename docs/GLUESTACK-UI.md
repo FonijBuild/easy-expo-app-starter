@@ -2,6 +2,11 @@
 
 The project uses gluestack-ui v5 with NativeWind v5 and Tailwind CSS v4. NativeWind v5 is currently a preview dependency; it is isolated behind the local UI layer and documented in ADR 0002.
 
+```bash
+npx gluestack-ui@latest init --path src/shared/components/ui --use-pnpm
+npx gluestack-ui add --all
+```
+
 ## Ownership model
 
 Gluestack components are copied/source-owned in `src/shared/ui`, one component per directory:
