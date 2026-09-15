@@ -1,83 +1,67 @@
-# Easy Starter React Native App
+<div align="center">
 
-A configurable Expo starter for Android, iOS, and web, built with Expo Router, gluestack-ui v5, NativeWind v5, TypeScript, TanStack Query, Zustand, React Hook Form, Zod, and i18next.
+# Easy Expo App Starter
 
-> **NativeWind status:** v5 is consumed from its `preview` tag because this variant explicitly targets the latest gluestack + NativeWind/Tailwind v4 integration. See `docs/adr/0002-nativewind-v5.md` before production release.
+**A production-capable Expo foundation for maintainable cross-platform Android, iOS, and web applications.**
 
-## Included
+[![Use this template](https://img.shields.io/badge/use%20this%20template-2EA44F?logo=github&logoColor=white)](https://github.com/FonijBuild/easy-expo-app-starter/generate)
+[![License: MIT](https://img.shields.io/badge/license-MIT-yellow.svg)](LICENSE)
+![Status: Foundation](https://img.shields.io/badge/status-foundation-F59E0B)
+![Expo](https://img.shields.io/badge/Expo-000020?logo=expo&logoColor=white) ![React Native](https://img.shields.io/badge/React%20Native-61DAFB?logo=react&logoColor=black) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white) ![pnpm](https://img.shields.io/badge/pnpm-F69220?logo=pnpm&logoColor=white)
 
-- First-launch intro and authenticated onboarding
-- Email login, phone OTP login/registration, password reset, and mock/remote auth adapters
-- Protected Expo Router route groups and tab navigation
-- Dashboard, activity, profile, appearance, language, account, about, and legal screens
-- Light, dark, and system themes
-- English and Persian with live LTR/RTL layout direction
-- Secure native session storage and non-sensitive preference storage
-- Source-owned gluestack components in `src/shared/ui`
-- Single-source brand tokens that generate Tailwind v4 CSS
-- Feature generators, tests, CI, EAS profiles, architecture docs, specs, and agent rules
+[Documentation](https://github.com/FonijBuild/fonij-docs) · [Discussions](https://github.com/orgs/FonijBuild/discussions) · [Issues](https://github.com/FonijBuild/easy-expo-app-starter/issues)
+
+</div>
+
+> “What do we build for, if not to lessen each other’s hardship?”
+
+> [!IMPORTANT]
+> This repository is currently in the **foundation stage**. Do not treat it as production-ready until the first stable release.
+
+## Best for
+
+- Android and iOS products from one codebase
+- Products that need native device capabilities
+- Mobile-first products with authenticated flows
+- Projects that may share a backend with web clients
+
+**Not for:** Products whose only required surface is a conventional desktop-first website.
+
+## Baseline
+
+- Expo Router and typed navigation boundaries
+- Authentication, onboarding, settings, and app-shell foundations
+- Theme, i18n, LTR/RTL, storage, query, form, and validation layers
+- Testing, build profiles, CI, and configuration conventions
+- AI-agent rules, specs, and architecture documentation
 
 ## Quick start
 
+Preferred:
+
 ```bash
-corepack enable
+fonij create my-product
+```
+
+Direct template use:
+
+```bash
+gh repo create my-product --template FonijBuild/easy-expo-app-starter --private --clone
+cd my-product
 cp .env.example .env
 pnpm install
 pnpm check
 pnpm dev
 ```
 
-The first install creates `pnpm-lock.yaml`. Commit that lockfile before publishing the template, and then change CI installs to `pnpm install --frozen-lockfile`.
+## Project contract
 
-Mock credentials:
+- `.fonij/starter.json` describes this foundation to Fonij.
+- `AGENTS.md` defines repository rules for AI coding agents.
+- `specs/` contains implementation-ready feature specifications.
+- `docs/` contains architecture and repository-specific guidance.
+- Keep quality checks green before merging changes.
 
-```text
-Email: demo@example.com
-Password: password123
-OTP: 123456
-```
+## Contributing
 
-## Quality checks
-
-```bash
-pnpm typecheck
-pnpm lint
-pnpm test
-pnpm format:check
-pnpm theme:check
-pnpm check
-```
-
-## Customize a new app
-
-1. Edit brand metadata, logo mode, typography, and semantic colors in `src/shared/config/brand-config.ts`, then run `pnpm theme:sync`. Replace static logo files through `src/shared/config/brand-assets.ts`.
-2. Edit feature flags, languages, mock auth values, layout, and legal metadata in `src/shared/config/app-config.ts`.
-3. Replace images under `assets/images` and update `app.config.ts` when paths change.
-4. Replace copy in `src/shared/i18n/locales/en.json` and other locale files.
-5. Set package identifiers and public environment values in `.env`.
-6. Replace legal placeholders before release.
-7. Switch `EXPO_PUBLIC_API_MODE=remote` and implement your backend contract.
-
-Read `AGENTS.md` before agent-driven changes and start feature work from `specs/README.md`.
-
-## Architecture
-
-```text
-src/app       Route declarations and navigation composition only
-src/features  Vertical product capabilities
-src/shared    Design system, configuration, providers, storage, API, and reusable code
-```
-
-See `docs/ARCHITECTURE.md`, `docs/CONFIGURATION.md`, `docs/AUTHENTICATION.md`, `docs/GLUESTACK-UI.md`, `docs/NATIVEWIND-V5.md`, and `docs/REWRITE_REPORT.md`.
-
-## Static web export
-
-```bash
-pnpm build:web
-```
-
-The export is written to `dist/`. A production Nginx container is included:
-
-```bash
-docker compose up --build
-```
+Read [`CONTRIBUTING.md`](CONTRIBUTING.md) before contributing. Security issues must follow [`SECURITY.md`](SECURITY.md).
